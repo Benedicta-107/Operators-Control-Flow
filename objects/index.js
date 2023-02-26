@@ -66,3 +66,35 @@ console.log(JambScores1);
 const add = Object.assign(firstPerson, JambScores1);
 console.log(JambScores1);
 console.log(firstPerson)
+
+//What are the different ways you can clone an object? Give examples for each of them.
+/**
+ * Three ways to clone an object are;
+ * 1. Object.assign()
+ * 2. Spread syntax
+ * 3. JSON.parse ()
+ */
+//Example of cloning an object using object.assign ()
+const firstiPhone = {
+    brand: "Apple",
+    make: "iPhone 2G",
+    storage: "8GB",
+    pixel: "320x480",
+    inches: "3.5",
+    yearReleased: "2007",
+};
+console.log(firstiPhone);
+//cloning the object into latest iphone
+const latestiPhone = Object.assign({}, firstiPhone);
+console.log(firstiPhone);
+console.log(latestiPhone);
+
+latestiPhone.make = "iPhone 14";
+latestiPhone.storage = "512GB";
+latestiPhone.pixel = "2532x1170";
+latestiPhone.inches = "6.1";
+latestiPhone.yearReleased = "2022";
+
+console.log("After changing the make, storage, pixel, inches, and year released");
+console.log(firstiPhone);
+console.log(latestiPhone);
