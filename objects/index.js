@@ -72,7 +72,7 @@ console.log(firstPerson)
  * Three ways to clone an object are;
  * 1. Object.assign()
  * 2. Spread syntax
- * 3. JSON.parse ()
+ * 3. JSON.parse
  */
 //Example of cloning an object using object.assign ()
 const firstiPhone = {
@@ -98,3 +98,31 @@ latestiPhone.yearReleased = "2022";
 console.log("After changing the make, storage, pixel, inches, and year released");
 console.log(firstiPhone);
 console.log(latestiPhone);
+
+//Example of cloning an object using spread syntax {...}
+const fifthiPhone = {...firstiPhone};
+
+console.log(firstiPhone);
+console.log(fifthiPhone);
+fifthiPhone.make = "iPhone 5s";
+fifthiPhone.storage = "64GB";
+fifthiPhone.pixel = "1136x640";
+fifthiPhone.inches = "4.0";
+fifthiPhone.yearReleased = "2013";
+
+console.log("After changing the make, storage, pixel, inches, and year released");
+console.log({firstiPhone});
+console.log({fifthiPhone});
+
+//Example of cloning an object using JSON.parse
+const tenthiPhone = JSON.parse;
+
+tenthiPhone.make = "iPhone X";
+tenthiPhone.storage = "256GB";
+tenthiPhone.pixel = "2436x1125";
+tenthiPhone.inches = "5.85";
+tenthiPhone.yearReleased = "2017";
+
+console.log("After changing the make, storage, pixel, inches, and year released");
+console.log({firstiPhone});
+console.log({tenthiPhone});
