@@ -33,12 +33,36 @@ console.log(MyInstagramPost, ValsInstagramPost, ChibudosInstagramPost);
 ENG - 70
 GOVT - 85
 LIT - 82
-CRK - 94
-
-Using the factory method, implement a createPerson() factory function that takes name, age and location as arguments. 
-Afterwards, create an object representing Musa from the factory function. 
-Also, implement a factory function createJambScores() that takes eng, govt, lit, crk as arguments. 
-Then create an object representing Muse’s JAMB scores. Add the object as a property to Musa object you created above in (a) above
-
+CRK - 94 
  */
+//Using the factory method, implement a createPerson() factory function that takes name, age and location as arguments.
+function createPerson(name, age, location) {
+    return {
+        name: name,
+        age: age,
+        location: location,
+    };
+}
+//Afterwards, create an object representing Musa from the factory function.
+const firstPerson = createPerson('Musa Dawodu', 19, 'Lekki-Lagos State');
+console.log(firstPerson);
 
+//Also, implement a factory function createJambScores() that takes eng, govt, lit, crk as arguments. 
+ 
+function createJambScores(eng, govt, lit, crk) {
+    return {
+        eng: eng,
+        govt: govt,
+        lit: lit,
+        crk: crk,
+    };
+    
+}
+//Then create an object representing Muse’s JAMB scores.
+const JambScores1 = createJambScores(70, 85, 82, 94);
+console.log(JambScores1);
+
+//Add the object as a property to Musa object you created above in (a) above
+const add = Object.assign(firstPerson, JambScores1);
+console.log(JambScores1);
+console.log(firstPerson)
