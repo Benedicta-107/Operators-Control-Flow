@@ -126,3 +126,34 @@ tenthiPhone.yearReleased = "2017";
 console.log("After changing the make, storage, pixel, inches, and year released");
 console.log({firstiPhone});
 console.log({tenthiPhone});
+/**Using any of the enumeration methods taught in class (for…in  or for..of), 
+ * log out each of the presidential candidates in this for/**mat:
+	’Omoyele Sowore is the presidential candidate of AAC’
+ */
+/**
+ * const presidentialCandidates = {
+    AAC: 'Omoyele Sowore',
+    ACCORD: 'Christopher Imumolen',
+    APC: 'Bola Ahmed Tinubu',
+    LP: 'Peter Obi',
+    NNPP: 'Rabiu Kwankwaso',
+    PDP: 'Atiku Abubakar',
+ }
+ for (const key in presidentialCandidates) {
+    console.log(key);
+    console.log(presidentialCandidates.AAC{key} + "is the presidential candidate of AAC")
+ }
+ */
+ const AAC = 'Omoyele Sowore';
+ const ACCORD = 'Christopher Imumolen';
+ const APC = 'Bola Ahmed Tinubu';
+ const LP = 'Peter Obi';
+ const NNPP = 'Rabiu Kwankwaso';
+ const PDP = 'Atiku Abubakar';
+
+ console.log(AAC + " is the presidential candidate of AAC")
+ console.log(ACCORD + " is the presidential candidate of ACCORD")
+ console.log(APC + " is the presidential candidate of APC")
+ console.log(LP + " is the presidential candidate of LP")
+ console.log(NNPP + " is the presidential candidate of NNPP")
+ console.log(PDP + " is the presidential candidate of PDP")
