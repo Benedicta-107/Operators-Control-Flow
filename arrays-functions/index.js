@@ -39,15 +39,15 @@ let arrayOfLanguages = ["C#", "JavaScript", "Ruby", "PHP", "Python"];
 arrayOfLanguages.push("Kotlin");
 console.log(arrayOfLanguages);
 
-let arrayOfLanguages = ["C#", "JavaScript", "Ruby", "PHP", "Python"];
+//let arrayOfLanguages = ["C#", "JavaScript", "Ruby", "PHP", "Python"];
 arrayOfLanguages.splice(3, 0, "Java");
 console.log(arrayOfLanguages);
 
-let arrayOfLanguages = ["C#", "JavaScript", "Ruby", "PHP", "Python"];
+//let arrayOfLanguages = ["C#", "JavaScript", "Ruby", "PHP", "Python"];
 arrayOfLanguages.splice(0, 1, "Scala", "Swift");
 console.log(arrayOfLanguages);
 
-let arrayOfLanguages = ["C#", "JavaScript", "Ruby", "PHP", "Python"];
+//let arrayOfLanguages = ["C#", "JavaScript", "Ruby", "PHP", "Python"];
 arrayOfLanguages.splice(4, 4, "Go", "Rust", "Python");
 console.log(arrayOfLanguages);
 
@@ -62,3 +62,32 @@ let fruit = ['apple', 'mango', 'banana'];
  */
 //ANSWER
 /**The value will be apple, mango, banana */
+
+/**
+ * Write a function that accepts an array of numbers as an argument. 
+ * Return the maximum value in the array.
+ * e.g., max([4, 5, 10, -2]) // maximum value is 10
+
+ */
+//ANSWER
+const array1 = [4, 5, 10, -2];
+
+console.log("maximum value is " + Math.max(...array1));
+
+//nthIndexOf('123456789123465789', '1', 1)
+
+/**
+ * Write a function called valTimesIndex which accepts an array of numbers and returns a new array with each value multiplied by the index
+ * it is at in the array: e.g., valTimesIndex([1,2,3]) // [0,2,6]
+ * valTimesIndex([5,10,15]) // [0,10,30]
+ */
+//ANSWER
+
+
+function valTimesIndex (array){
+	const array2 = [1, 2, 3];
+	return array2 * indexof;
+	console.log(valTimesIndex(...array2));
+}
+valTimesIndex(1, 2, 3);
+valTimesIndex(5, 10, 15);
