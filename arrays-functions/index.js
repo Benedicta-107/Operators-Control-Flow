@@ -84,10 +84,20 @@ console.log("maximum value is " + Math.max(...array1));
 //ANSWER
 
 
-function valTimesIndex (array){
+/**
+ * function valTimesIndex (array){
 	const array2 = [1, 2, 3];
 	return array2 * indexof;
 	console.log(valTimesIndex(...array2));
 }
 valTimesIndex(1, 2, 3);
 valTimesIndex(5, 10, 15);
+
+ */
+let num = [1, 2, 3]
+function valTimesIndex(num){
+	for (let index = 0; index < array.length; index++) {
+		const element = array[index];	
+	} 
+console.log(element * num);
+}
