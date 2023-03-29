@@ -1,45 +1,48 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO List Assignment</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>TODO LIST ASSIGNMENT</title>
 </head>
-
 <body>
-    <div class="container">
-        <h2>TODO LIST</h2>
-        <h3>Add Item</h3>
-        <div class="new-task-container">
-            <input type="text" id="new-task" />
-            <button id="add-button">Add</button>
-        </div>
+    <!--The head section to input what to do-->
+   <header>
+        <h1>TODO LIST</h1>
+        <form id="new-task-form">
+            <input type="text" id="new-task-input" 
+            placeholder="To-Do" />
+            <input type="submit" id="new-task-submit " 
+            value="Add task" />
+        </form>
+   </header> 
+   <!--The section to show the inputed tasks-->
+   <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <div id="task">
+                <div class="content">
+                    <input
+                        type="text"
+                        class="text"
+                        value="My task"
+                        readonly
+                    />
+                </div>
+                <!--To include editable and deletable buttons (Action section)-->
+                <div class="actions">
+                    <button class="edit-button">Edit</button>
+                    <button class="delete-button">Delete</button>
+                </div>
 
-        <h3>Todo</h3>
-        <ul id="incomplete-tasks">
-            <li>
-                <p>Assignment on to do list</p>
-                <button id="edit-button">Edit</button>
-                <button id="delete-button">Delete</button>
-            </li>
-            <li>
-                <p>Continue learning on C language and JavaScript</p>
-                <button id="edit-button1">Edit</button>
-                <button id="delete-button1">Delete</button>
-            </li>
+            </div>
 
-            <li>
-                <p>Go for a 30 minutes walk</p>
-                <button id="edit-button2">Edit</button>
-                <button id="delete-button2">Delete</button>
-            </li>
-        </ul>
-    </div>
-    <script src="index.js"></script>
+   
+        </section>
+        
+   </main>
+
+   <script src="index.js"></script>
 </body>
-
 </html>
